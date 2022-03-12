@@ -1,0 +1,49 @@
+h1,p{
+    text-align: center;
+}
+.container{
+    display: block;
+    width: 30%;
+    height:auto;
+    margin-left: 500px;
+    
+}
+ input{
+    width: 100%;
+   padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+}
+button{
+    width: 100%;
+    height:40px;
+    padding:8px;
+    background-color: rgb(11, 124, 168);
+    color: white;
+    border-radius: 2px;
+}
+.tableConatiner{
+    margin-left: 500px;
+}
+.tableConatiner td,th{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    
+
+}
+.tableConatiner table{
+    
+    width:50%;
+    
+    
+}
+.tableConatiner th{
+    border-top: 1px solid black;
+    background-color: gray;
+    
+}

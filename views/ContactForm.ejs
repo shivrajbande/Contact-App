@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contacts.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form method = "post" action ="/contacts">
+        <h1> Add Contacts</h1>
+        <div class="container">
+            <label>Name</label>
+            <input type="text" name="name">
+            </br>
+            <label>Ph No</label>
+            <input type="number" name="number">
+            </br>
+            <label>Email</label>
+            <input type="email" name="email">
+            </br>
+            <button id="save">Save</button>
+        </div>
+       
+        </form>
+        </br>
+        </br>
+        <h1>My contacts</h1>
+        <div class="tableConatiner">
+            <table>
+                <div class="tableheader">
+                    <tr>
+                        <th> Name</th>
+                        <th>Ph No</th>
+                        <th>Email</th>
+                    </tr>
+                </div>
+                
+                <div class="tabledata">
+                    
+                  
+                        <% records.Contacts.forEach(function(item){ %>
+
+                                        <tr>
+                                            <td><%= item.name%></td>
+                                            <td><%= item.PhoneNumber%></td>
+                                            <td><%= item.Email%></td></td>
+                                        </tr>
+                            
+                        <% }) %>
+                     
+                </div>
+                  
+               
+            </table>
+        </div>
+        
+</body>
+</html>
